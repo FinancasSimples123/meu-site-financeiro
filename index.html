@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação Financeira - Transforme sua Vida</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #18bc9c;
+            --text-color: #333;
+            --background-color: #f9f9f9;
+            --font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-family);
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 1em;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1em;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 2em;
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.5em 1em;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .sobre, .cursos, .depoimentos, .contato {
+            padding: 2em;
+            text-align: center;
+        }
+
+        .curso {
+            margin: 1em 0;
+        }
+
+        .depoimento {
+            margin: 1em 0;
+            font-style: italic;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Educação Financeira</div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <h1>Transforme sua vida financeira!</h1>
+        <p>Aprenda a gerir seu dinheiro e alcançar a liberdade financeira com nossos cursos.</p>
+        <a href="#cursos" class="btn">Comece Agora</a>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Somos apaixonados por educação financeira e queremos ajudar você a conquistar seus sonhos. Com métodos simples e eficazes, nossos cursos são projetados para todos os níveis de conhecimento.</p>
+    </section>
+
+    <section id="cursos" class="cursos">
+        <h2>Nossos Cursos</h2>
+        <div class="curso">
+            <h3>Gestão Financeira Pessoal</h3>
+            <p>Descubra como organizar suas finanças e poupar mais.</p>
+            <a href="#" class="btn">Saiba Mais</a>
+        </div>
+        <div class="curso">
+            <h3>Investimentos para Iniciantes</h3>
+            <p>Aprenda a investir com segurança e inteligência.</p>
+            <a href="#" class="btn">Saiba Mais</a>
+        </div>
+        <div class="curso">
+            <h3>Planejamento para Aposentadoria</h3>
+            <p>Garanta um futuro financeiro tranquilo e confortável.</p>
+            <a href="#" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="depoimentos">
+        <h2>O que nossos alunos dizem</h2>
+        <div class="depoimento">
+            <p>"Graças aos cursos, consegui organizar minha vida financeira e já comecei a investir!"</p>
+            <span>- João Silva</span>
+        </div>
+        <div class="depoimento">
+            <p>"Os materiais são incríveis! Simples, práticos e muito úteis no dia a dia."</p>
+            <span>- Maria Oliveira</span>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Fale Conosco</h2>
+        <form action="#" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Educação Financeira. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
